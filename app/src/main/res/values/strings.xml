@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Smart Fitness</string>
+
+    <string name="proga1">задания на 2 недели: %1$d \n
+1. отжимания лесенкой с 1 повторения до \n
+2. подтягивания лесенкой с 1 повторения до \n
+3. Приседания 4 подхода до максимума \n
+4. Пресс 4 подхода до максимума с удержанием корпуса на половину 20 градусах на 10 секунд \n
+5. Экстензия 4 подхода до максимума с удержнием позиции на 10 секунд \n
+в конце второй недели пройдите новое тестирование</string>
+    <string name="block1">делай все</string>
+    <string name="block2">экстензия %1$d</string>
+    <string name="block3">пресс</string>
+    <string name="block4">приседания</string>
+    <string name="block5">подтягивания</string>
+    <string name="block6">отжимания</string>
+    <string name="block7">спина и пресс</string>
+    <string name="block8">эсктензия подтягивнаия</string>
+    <string name="block9">экстензия приседания</string>
+    <string name="block10">приседания пресс</string>
+    <string name="block11">отжимания экстензия</string>
+    <string name="block12">отжимания приседания</string>
+    <string name="block13">отжимания подтягивания</string>
+    <string name="block14">подтягивания пресс</string>
+    <string name="block15">отжимания пресс</string>
+    <string name="block16">подтягивания приседания</string>
+    <string name="block17">приседания пресс экстензия</string>
+    <string name="block18">подтягивания пресс экстензия</string>
+    <string name="block19">делай подтягивания приседания и экстензия</string>
+    <string name="block20">делай подтягивания приседания и пресс</string>
+    <string name="block21">делай отжимания пресс и экстензия</string>
+    <string name="block22">делай отжимания приседания и экстензия</string>
+    <string name="block23">делай отжимания приседания пресс</string>
+    <string name="block24">делай отжимания подтягивания и экстензия</string>
+    <string name="block25">делай отжимания подтягивнаия и пресс</string>
+    <string name="block26">делай отжимания подтягивания и приседания</string>
+    <string name="block27">делай отжимания поджтягивания приседания и пресс</string>
+    <string name="block28">делай отжимания подтягивания приседания и экстензия</string>
+    <string name="block29">делай отжимания подтягивания пресс и экстензия</string>
+    <string name="block30">делай отжимания приседания пресс и экстензия</string>
+    <string name="block31">делай подтягивания приседания пресс и кстензия</string>
+
+
+</resources>

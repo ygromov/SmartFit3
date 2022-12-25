@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="SmartTrain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/b_ofp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:onClick="onClickOfp"
+        android:text="OFP"
+        app:layout_constraintEnd_toStartOf="@+id/b_train"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/b_train" />
+
+    <Button
+        android:id="@+id/b_train"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="15dp"
+        android:text="Train"
+        app:layout_constraintEnd_toStartOf="@+id/b_journal"
+        app:layout_constraintTop_toBottomOf="@+id/tv_logo" />
+
+    <Button
+        android:id="@+id/b_journal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:text="журнал"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/b_train" />
+
+    <LinearLayout
+        android:id="@+id/ll_ofp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/b_ofp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b_ofp">
+
+        <EditText
+            android:id="@+id/et_push"
+            android:layout_width="119dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="отжимания"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/et_pull"
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="подтягивания"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/et_squad"
+            android:layout_width="119dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="приседания"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/et_abc"
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="пресс"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/et_exten"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="экстензия"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/b_result_ofp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickResult"
+            android:text="Анализ" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/sw_train"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:visibility="invisible"
+        app:layout_constraintTop_toBottomOf="@+id/b_ofp"
+        tools:layout_editor_absoluteX="193dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_train"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/tv_pushup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
