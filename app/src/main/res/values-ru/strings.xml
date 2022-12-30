@@ -1,30 +1,30 @@
 <resources>
-    <string name="app_name">Smart Fitness</string>
+    <string name="app_name">Умный тренинг</string>
 
     <string name="Train_name1" translatable="false">Training One Level</string>
 
-    <string name="proga1">задания на 2 недели: %1$d \n
+    <string name="proga1">задания на 2 недели: $d \n
 1. отжимания лесенкой с 1 повторения до \n
 2. подтягивания лесенкой с 1 повторения до \n
 3. Приседания 4 подхода до максимума \n
 4. Пресс 4 подхода до максимума с удержанием корпуса на половину 20 градусах на 10 секунд \n
 5. Экстензия 4 подхода до максимума с удержнием позиции на 10 секунд \n
 в конце второй недели пройдите новое тестирование</string>
-    <string name="block1">to do all</string>
-    <string name="block2">hyperextension</string>
-    <string name="block3">abc</string>
-    <string name="block4">squad</string>
-    <string name="block5">pullups</string>
-    <string name="block6">pushups</string>
-    <string name="block7">hyperextension and abc</string>
-    <string name="block8">hyperextension and pullups</string>
-    <string name="block9">hyperextension and squat</string>
-    <string name="block10">squat and abc</string>
-    <string name="block11">hyperextension and pushups</string>
-    <string name="block12">pushups and squat</string>
-    <string name="block13">pushups and pullups</string>
+    <string name="block1">делай все</string>
+    <string name="block2">экстензия %1$d</string>
+    <string name="block3">пресс</string>
+    <string name="block4">приседания</string>
+    <string name="block5">подтягивания</string>
+    <string name="block6">отжимания</string>
+    <string name="block7">спина и пресс</string>
+    <string name="block8">эсктензия подтягивнаия</string>
+    <string name="block9">экстензия приседания</string>
+    <string name="block10">приседания пресс</string>
+    <string name="block11">отжимания экстензия</string>
+    <string name="block12">отжимания приседания</string>
+    <string name="block13">отжимания подтягивания</string>
     <string name="block14">подтягивания пресс</string>
-    <string name="block15">pushups and abc</string>
+    <string name="block15">отжимания пресс</string>
     <string name="block16">подтягивания приседания</string>
     <string name="block17">приседания пресс экстензия</string>
     <string name="block18">подтягивания пресс экстензия</string>

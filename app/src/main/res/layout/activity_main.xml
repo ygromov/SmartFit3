@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:text="SmartTrain"
+        android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -59,45 +60,75 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/b_ofp">
 
+        <TextView
+            android:id="@+id/tv_push_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="отжимания" />
+
         <EditText
             android:id="@+id/et_push"
             android:layout_width="119dp"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="отжимания"
+            android:hint="за минуту"
             android:inputType="number" />
+
+        <TextView
+            android:id="@+id/tv_pull_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="подтягивания" />
 
         <EditText
             android:id="@+id/et_pull"
             android:layout_width="118dp"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="подтягивания"
-            android:inputType="textPersonName" />
+            android:hint="за минуту"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/tv_squat_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="приседания" />
 
         <EditText
             android:id="@+id/et_squad"
             android:layout_width="119dp"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="приседания"
-            android:inputType="textPersonName" />
+            android:hint="за минуту"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/tv_abc_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="пресс" />
 
         <EditText
             android:id="@+id/et_abc"
             android:layout_width="118dp"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="пресс"
-            android:inputType="textPersonName" />
+            android:hint="за минуту"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/tv_exten_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="гиперэкстензия" />
 
         <EditText
             android:id="@+id/et_exten"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="экстензия"
-            android:inputType="textPersonName" />
+            android:hint="за минуту"
+            android:inputType="number" />
 
         <Button
             android:id="@+id/b_result_ofp"
@@ -130,6 +161,30 @@
             <TextView
                 android:id="@+id/tv_pushup"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/tv_pull"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/tv_squat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/tv_abc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/tv_exten"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="TextView" />
         </LinearLayout>
