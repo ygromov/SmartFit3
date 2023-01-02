@@ -10,6 +10,48 @@ class MainActivity : AppCompatActivity() {
     lateinit var bindingclass : ActivityMainBinding
     var ofp = OFP()
 
+    var push = 0                              //присвоение текста в textview для вывода данных юзеру
+    var pull = 0
+    var squad = 0
+    var abc = 0
+    var exten = 0
+
+    var pushT = ""
+    var pullT = ""
+    var squatT = ""
+    var abcT = ""
+    var extenT = ""
+
+    var pushT2 = ""
+    var pullT2 = ""
+    var squatT2 = ""
+    var abcT2 = ""
+    var extenT2 = ""
+
+    var pushT3 = ""
+    var pullT3 = ""
+    var squatT3 = ""
+    var abcT3 = ""
+    var extenT3 = ""
+
+    var pushT4 = ""
+    var pullT4 = ""
+    var squatT4 = ""
+    var abcT4 = ""
+    var extenT4 = ""
+
+    var pushT5 = ""
+    var pullT5 = ""
+    var squatT5 = ""
+    var abcT5 = ""
+    var extenT5 = ""
+
+    var pushT6 = ""
+    var pullT6 = ""
+    var squatT6 = ""
+    var abcT6 = ""
+    var extenT6 = ""
+
     override fun onCreate(s: Bundle?) {
         super.onCreate(s)
         bindingclass = ActivityMainBinding.inflate(layoutInflater)
@@ -19,22 +61,22 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun onClickOfp(view: View){
-        bindingclass.llOfp.visibility = View.VISIBLE
-        bindingclass.swTrain.visibility = View.INVISIBLE
+//        bindingclass.llOfp.visibility = View.VISIBLE
+//        bindingclass.swTrain.visibility = View.INVISIBLE
     }
 
     fun onClickResult(view: View){                                                          //здесь происходит выбор уровня подготовки на основе польз. данных и ->
-        val push = bindingclass.etPush.text.toString().toInt()                              //присвоение текста в textview для вывода данных юзеру
-        val pull = bindingclass.etPull.text.toString().toInt()
-        val squad = bindingclass.etSquad.text.toString().toInt()
-        val abc = bindingclass.etAbc.text.toString().toInt()
-        val exten = bindingclass.etExten.text.toString().toInt()
+         push = bindingclass.etPush.text.toString().toInt()                              //присвоение текста в textview для вывода данных юзеру
+         pull = bindingclass.etPull.text.toString().toInt()
+         squad = bindingclass.etSquad.text.toString().toInt()
+         abc = bindingclass.etAbc.text.toString().toInt()
+         exten = bindingclass.etExten.text.toString().toInt()
 
-        val pushT = resources.getQuantityString(R.plurals.push, push, push)
-        val pullT = resources.getQuantityString(R.plurals.pull, pull, pull)
-        val squatT = resources.getQuantityString(R.plurals.squat, squad,squad)
-        val abcT = resources.getQuantityString(R.plurals.abc, abc, abc)
-        val extenT = resources.getQuantityString(R.plurals.exten, exten,exten)
+         pushT = resources.getQuantityString(R.plurals.push, push, push)
+         pullT = resources.getQuantityString(R.plurals.pull, pull, pull)
+         squatT = resources.getQuantityString(R.plurals.squat, squad,squad)
+         abcT = resources.getQuantityString(R.plurals.abc, abc, abc)
+         extenT = resources.getQuantityString(R.plurals.exten, exten,exten)
 
 
             // поменять на switch перебор
@@ -296,8 +338,117 @@ class MainActivity : AppCompatActivity() {
             bindingclass.tvTrain.setText("Мощные результаты! Жди обновления для второго уроня подготовки!")
         }
         bindingclass.llOfp.visibility = View.INVISIBLE
-        bindingclass.swTrain.visibility = View.VISIBLE
+        bindingclass.llWorkoutProgrammm.visibility = View.VISIBLE
+//        bindingclass.swTrain.visibility = View.VISIBLE
         }
+
+    fun first_onClick (view: View){
+        bindingclass.swTrain.visibility = View.VISIBLE
+        bindingclass.llWorkoutProgrammm.visibility = View.INVISIBLE
+
+    }
+    fun two_onClick (view: View){
+        bindingclass.swTrain.visibility = View.VISIBLE
+        bindingclass.llWorkoutProgrammm.visibility = View.INVISIBLE
+        push+=1
+        pull+=1
+        squad+=2
+        abc+=2
+        exten+=2
+        pushT2 = resources.getQuantityString(R.plurals.push, push, push)
+        pullT2 = resources.getQuantityString(R.plurals.pull, pull, pull)
+        squatT2 = resources.getQuantityString(R.plurals.squat, squad,squad)
+        abcT2 = resources.getQuantityString(R.plurals.abc, abc, abc)
+        extenT2 = resources.getQuantityString(R.plurals.exten, exten,exten)
+        bindingclass.tvPushup.setText(pushT2)
+        bindingclass.tvPull.setText(pullT2)
+        bindingclass.tvSquat.setText(squatT2)
+        bindingclass.tvAbc.setText(abcT2)
+        bindingclass.tvExten.setText(extenT2)
+
+    }
+    fun three_onClick (view: View){
+        bindingclass.swTrain.visibility = View.VISIBLE
+        bindingclass.llWorkoutProgrammm.visibility = View.INVISIBLE
+        push+=2
+        pull+=2
+        squad+=4
+        abc+=4
+        exten+=4
+        pushT3 = resources.getQuantityString(R.plurals.push, push, push)
+        pullT3 = resources.getQuantityString(R.plurals.pull, pull, pull)
+        squatT3 = resources.getQuantityString(R.plurals.squat, squad,squad)
+        abcT3 = resources.getQuantityString(R.plurals.abc, abc, abc)
+        extenT3 = resources.getQuantityString(R.plurals.exten, exten,exten)
+        bindingclass.tvPushup.setText(pushT3)
+        bindingclass.tvPull.setText(pullT3)
+        bindingclass.tvSquat.setText(squatT3)
+        bindingclass.tvAbc.setText(abcT3)
+        bindingclass.tvExten.setText(extenT3)
+
+    }
+    fun four_onClick (view: View){
+        bindingclass.swTrain.visibility = View.VISIBLE
+        bindingclass.llWorkoutProgrammm.visibility = View.INVISIBLE
+        push+=3
+        pull+=3
+        squad+=5
+        abc+=5
+        exten+=5
+        pushT4 = resources.getQuantityString(R.plurals.push, push, push)
+        pullT4 = resources.getQuantityString(R.plurals.pull, pull, pull)
+        squatT4 = resources.getQuantityString(R.plurals.squat, squad,squad)
+        abcT4 = resources.getQuantityString(R.plurals.abc, abc, abc)
+        extenT4 = resources.getQuantityString(R.plurals.exten, exten,exten)
+        bindingclass.tvPushup.setText(pushT4)
+        bindingclass.tvPull.setText(pullT4)
+        bindingclass.tvSquat.setText(squatT4)
+        bindingclass.tvAbc.setText(abcT4)
+        bindingclass.tvExten.setText(extenT4)
+    }
+    fun five_onClick (view: View){
+        bindingclass.swTrain.visibility = View.VISIBLE
+        bindingclass.llWorkoutProgrammm.visibility = View.INVISIBLE
+        push+=3
+        pull+=3
+        squad+=6
+        abc+=6
+        exten+=6
+        pushT5 = resources.getQuantityString(R.plurals.push, push, push)
+        pullT5 = resources.getQuantityString(R.plurals.pull, pull, pull)
+        squatT5 = resources.getQuantityString(R.plurals.squat, squad,squad)
+        abcT5 = resources.getQuantityString(R.plurals.abc, abc, abc)
+        extenT5 = resources.getQuantityString(R.plurals.exten, exten,exten)
+        bindingclass.tvPushup.setText(pushT5)
+        bindingclass.tvPull.setText(pullT5)
+        bindingclass.tvSquat.setText(squatT5)
+        bindingclass.tvAbc.setText(abcT5)
+        bindingclass.tvExten.setText(extenT5)
+    }
+    fun six_onClick (view: View){
+        bindingclass.swTrain.visibility = View.VISIBLE
+        bindingclass.llWorkoutProgrammm.visibility = View.INVISIBLE
+        push+=5
+        pull+=3
+        squad+=7
+        abc+=8
+        exten+=8
+        pushT6 = resources.getQuantityString(R.plurals.push, push, push)
+        pullT6 = resources.getQuantityString(R.plurals.pull, pull, pull)
+        squatT6 = resources.getQuantityString(R.plurals.squat, squad,squad)
+        abcT6 = resources.getQuantityString(R.plurals.abc, abc, abc)
+        extenT6 = resources.getQuantityString(R.plurals.exten, exten,exten)
+        bindingclass.tvPushup.setText(pushT6)
+        bindingclass.tvPull.setText(pullT6)
+        bindingclass.tvSquat.setText(squatT6)
+        bindingclass.tvAbc.setText(abcT6)
+        bindingclass.tvExten.setText(extenT6)
+    }
+    fun b_sw_train_done_onClick (view: View){
+        bindingclass.swTrain.visibility = View.INVISIBLE
+        bindingclass.llWorkoutProgrammm.visibility = View.VISIBLE
+
+    }
 }
 
 

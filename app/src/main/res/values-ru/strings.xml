@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Умный тренинг</string>
 
-    <string name="Train_name1" translatable="false">Training One Level</string>
+    <string name="Train_name1" translatable="false">Тренировка: Первый уровень</string>
 
     <string name="proga1">задания на 2 недели: $d \n
 1. отжимания лесенкой с 1 повторения до \n
@@ -41,6 +41,14 @@
     <string name="block29">делай отжимания подтягивания пресс и экстензия</string>
     <string name="block30">делай отжимания приседания пресс и экстензия</string>
     <string name="block31">делай подтягивания приседания пресс и кстензия</string>
+    <string name="tw_workout_prog">Тренировочная программа на 2 недели:</string>
+    <string name="b_first_train">Первая тренировка</string>
+    <string name="b_two_train">Вторая тренировка</string>
+    <string name="b_three_train">Третья тренировка</string>
+    <string name="b_four_train">Четвертая тренировка</string>
+    <string name="b_five_train">Пятая тренировка</string>
+    <string name="b_six_train">Шестая тренировка</string>
+    <string name="b_sw_train_done">Закончил</string>
 
 
 </resources>

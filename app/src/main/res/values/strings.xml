@@ -1,7 +1,18 @@
 <resources>
     <string name="app_name">Smart Fitness</string>
 
-    <string name="Train_name1" translatable="false">Training One Level</string>
+    <string name="Train_name1">Training One Level</string>
+
+    <string name="tw_workout_prog">Workout programm on 2 week</string>
+
+    <string name="b_first_train">First workout </string>
+    <string name="b_two_train">Two  workout</string>
+    <string name="b_three_train">Three  workout</string>
+    <string name="b_four_train">Four workout</string>
+    <string name="b_five_train">Five workout</string>
+    <string name="b_six_train">Six workout</string>
+
+    <string name="b_sw_train_done">Complete workout</string>
 
     <string name="proga1">задания на 2 недели: %1$d \n
 1. отжимания лесенкой с 1 повторения до \n
